@@ -83,3 +83,10 @@ body {
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+
+/**product**/
+.product {
+    background-color: var(--color-neutral-white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
