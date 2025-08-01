@@ -173,9 +173,10 @@ body {
 .button:is(:hover, :focus) {
   background-color: var(--color-primary-600);
 }
-.button[data-icon="shopping-cart"] ::before{
-    content: ;
+.button[data-icon="shopping-cart"]::before {
+    content: "";
     background-image: url("images/icon-cart.svg");
     width: 15px;
     height: 15px;
+    display: inline-block;
 }
