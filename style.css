@@ -71,8 +71,8 @@ h6 {
 
 h1,
 h2,
-h3{
-    line-height: 1.1;
+h3 {
+  line-height: 1.1;
 }
 /* 9. Improve line wrapping */
 p {
@@ -108,6 +108,16 @@ body {
   align-items: center;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /**product**/
 .product {
   --content-padding: 1.5rem;
@@ -124,10 +134,10 @@ body {
   padding: var(--content-padding);
 }
 
-.product__category{
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-size: 0.8125rem;
+.product__category {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
 }
 
 .product__title {
@@ -135,8 +145,20 @@ body {
   font-size: 2rem;
   color: var(--color-neutral-black);
 }
-.product_price{
+.product__price {
   font-family: var(--ff-accent);
-  color: var(--color-primary-700);
-   font-size: 2rem;
+  color: var(--color-primary-500);
+  font-size: 2rem;
+}
+
+/**button**/
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: pointer;
 }
