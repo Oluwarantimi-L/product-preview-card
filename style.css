@@ -69,6 +69,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1,
+h2,
+h3{
+    line-height: 1.1;
+}
 /* 9. Improve line wrapping */
 p {
   text-wrap: pretty;
@@ -111,9 +116,20 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
 .product__content {
   display: grid;
   gap: var(--content-spacing);
-  border: 3px solid violet;
   padding: var(--content-padding);
+}
+
+.product__category{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.product__title {
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  color: var(--color-neutral-black);
 }
