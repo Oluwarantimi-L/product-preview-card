@@ -1,22 +1,24 @@
-:root{
-    --color-primary-500: hsl(158, 36%, 37%);
-    --color-primary-700: hsl(158, 42%, 18%);
+:root {
+  --color-primary-500: hsl(158, 36%, 37%);
+  --color-primary-700: hsl(158, 42%, 18%);
+
+  --color-neutral-black: hsl(212, 21%, 14%);
+  --color-neutral-grey: hsl(228, 12%, 48%);
+  --color-neutral-cream: hsl(30, 38%, 92%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+
+ --fw-regular: 500;
+--fw-bold: 700;
 
 
-    --color-neutral-black: hsl(212, 21%, 14%);
-    --color-neutral-grey: hsl(228, 12%, 48%);
-    --color-neutral-cream: hsl(30, 38%, 92%);
-    --color-neutral-white: hsl(0, 0%, 100%);
-
-    --fw--regular: 500;
-    --fw--bold: 700;
-
-   --ff-accent: font-family: "Fraunces", serif;
-    --ff-base: font-family: "Montserrat", sans-serif;
+  --ff-accent: "Fraunces", serif;
+  --ff-base: "Montserrat", sans-serif;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -40,18 +42,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -59,41 +74,47 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
-
 /** custom styles **/
 body {
-    font-family: var(--ff-base);
-    font-weight: var(--fw--regular);
-    font-size: 0.875rem;
-    color: var(--color-neutral-grey);
-    background-color: var(--color-neutral-cream);
+  font-family: var(--ff-base);
+  font-weight: var(--fw--regular);
+  font-size: 0.875rem;
+  color: var(--color-neutral-grey);
+  background-color: var(--color-neutral-cream);
 
-    display: grid;
-    place-content: center;
-    margin: 1rem;
+  display: grid;
+  place-content: center;
+  margin: 1rem;
 }
 
 /**flex-group**/
 .flex-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 /**product**/
 .product {
-    --content-padding: 1.5rem;
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
 
-    background-color: var(--color-neutral-white);
-    border-radius: 0.5rem;
-    overflow: hidden;
+  background-color: var(--color-neutral-white);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .product__content {
-    display: grid;
-    border: 3px solid violet;
-    padding: var(--content-padding);
+  display: grid;
+  gap: var(--content-spacing);
+  border: 3px solid violet;
+  padding: var(--content-padding);
 }
