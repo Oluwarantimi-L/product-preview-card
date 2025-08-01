@@ -1,5 +1,6 @@
 :root {
   --color-primary-500: hsl(158, 36%, 37%);
+  --color-primary-600: hsl(158, 36%, 20%);
   --color-primary-700: hsl(158, 42%, 18%);
 
   --color-neutral-black: hsl(212, 21%, 14%);
@@ -149,6 +150,7 @@ body {
   font-family: var(--ff-accent);
   color: var(--color-primary-500);
   font-size: 2rem;
+  font-weight: var(--fw-bold)
 }
 
 /**button**/
@@ -159,10 +161,21 @@ body {
   gap: 0.5rem;
   font-size: 0.9375rem;
   background-color: var(--color-primary-500);
+  color: var(--color-neutral-white);
   font-weight: var(--fw-bold);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5em 1.5em;
   text-decoration: none;
   border-radius: 0.5rem;
   border: 0;
   cursor: pointer;
+}
+
+.button:is(:hover, :focus) {
+  background-color: var(--color-primary-600);
+}
+.button[data-icon="shopping-cart"] ::before{
+    content: ;
+    background-image: url("images/icon-cart.svg");
+    width: 15px;
+    height: 15px;
 }
