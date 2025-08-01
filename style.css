@@ -7,9 +7,8 @@
   --color-neutral-cream: hsl(30, 38%, 92%);
   --color-neutral-white: hsl(0, 0%, 100%);
 
- --fw-regular: 500;
---fw-bold: 700;
-
+  --fw-regular: 500;
+  --fw-bold: 700;
 
   --ff-accent: "Fraunces", serif;
   --ff-base: "Montserrat", sans-serif;
